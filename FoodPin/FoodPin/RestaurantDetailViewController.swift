@@ -13,7 +13,14 @@ class RestaurantDetailViewController: UIViewController {
     
     @IBOutlet weak var restaurantImageView: UIImageView!
     
-    var restaurantImageName = ""
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    @IBOutlet weak var typeLabel: UILabel!
+    
+    
+    var restaurant: Restaurant!
     
     
     override func viewDidLoad() {
@@ -21,7 +28,11 @@ class RestaurantDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        restaurantImageView.image = UIImage(named: restaurantImageName)
+        restaurantImageView.image = UIImage(named: restaurant.image)
+        
+        nameLabel.text = restaurant.name
+        locationLabel.text = restaurant.location
+        typeLabel.text = restaurant.type
         
     }
 

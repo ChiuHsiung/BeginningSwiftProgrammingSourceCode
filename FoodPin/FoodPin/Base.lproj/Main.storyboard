@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hW9-y8-nAc" id="qMu-Iy-rH5">
-                                    <frame key="frameInset" width="342" height="79.5"/>
+                                    <frame key="frameInset" width="342" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n4b-jj-Lhs">
@@ -70,7 +70,7 @@
                                     <outlet property="nameLabel" destination="1Fn-CZ-a66" id="XkJ-Gt-ZCF"/>
                                     <outlet property="thumbnailImageView" destination="8PN-x5-5S5" id="Duw-cv-oMz"/>
                                     <outlet property="typeLabel" destination="XkT-8X-4wk" id="6j7-2q-Dfv"/>
-                                    <segue destination="RuR-sZ-ZXo" kind="show" id="9qG-Jg-7zQ"/>
+                                    <segue destination="RuR-sZ-ZXo" kind="show" identifier="showRestaurantDetail" id="9qG-Jg-7zQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -97,19 +97,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O70-6D-2kg"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O70-6D-2kg"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="PqE-vn-RHY">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXe-Ez-4hu">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRr-HI-SHb">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBh-jA-RCn">
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="O70-6D-2kg" firstAttribute="leading" secondItem="Tyq-FK-dNS" secondAttribute="leading" id="5AL-Bs-mni"/>
+                            <constraint firstItem="PqE-vn-RHY" firstAttribute="centerY" secondItem="Tyq-FK-dNS" secondAttribute="centerY" id="JvS-0R-AJb"/>
                             <constraint firstItem="O70-6D-2kg" firstAttribute="top" secondItem="Tyq-FK-dNS" secondAttribute="top" id="SlR-yS-8WI"/>
                             <constraint firstItem="SuJ-Iu-bby" firstAttribute="top" secondItem="O70-6D-2kg" secondAttribute="bottom" id="iDM-aG-2Rc"/>
                             <constraint firstAttribute="trailing" secondItem="O70-6D-2kg" secondAttribute="trailing" id="loM-Fr-bYH"/>
+                            <constraint firstItem="PqE-vn-RHY" firstAttribute="centerX" secondItem="Tyq-FK-dNS" secondAttribute="centerX" id="yfE-KJ-SVa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w3G-mp-YMU"/>
                     <connections>
+                        <outlet property="locationLabel" destination="dBh-jA-RCn" id="w8E-zz-RtO"/>
+                        <outlet property="nameLabel" destination="aXe-Ez-4hu" id="mFI-to-Gh8"/>
                         <outlet property="restaurantImageView" destination="O70-6D-2kg" id="A9w-Da-0Ye"/>
+                        <outlet property="typeLabel" destination="BRr-HI-SHb" id="Pxo-AA-EGI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fek-8R-RLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
