@@ -13,6 +13,7 @@
 		3C1758C71DB3159700B2A0F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1758C51DB3159700B2A0F7 /* LaunchScreen.storyboard */; };
 		3C1758CF1DB317A100B2A0F7 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1758CE1DB317A100B2A0F7 /* RestaurantTableViewController.swift */; };
 		3C1758D11DB366D600B2A0F7 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1758D01DB366D600B2A0F7 /* RestaurantTableViewCell.swift */; };
+		3C22049B1DBFA951005E3AF6 /* RestaurantDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C22049A1DBFA951005E3AF6 /* RestaurantDetailTableViewCell.swift */; };
 		3CFC5C681DBC650D005CFBC1 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC5C671DBC650D005CFBC1 /* RestaurantDetailViewController.swift */; };
 		3CFC5C6A1DBD08B5005CFBC1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC5C691DBD08B5005CFBC1 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		3C1758C81DB3159700B2A0F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C1758CE1DB317A100B2A0F7 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		3C1758D01DB366D600B2A0F7 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		3C22049A1DBFA951005E3AF6 /* RestaurantDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTableViewCell.swift; sourceTree = "<group>"; };
 		3CFC5C671DBC650D005CFBC1 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		3CFC5C691DBD08B5005CFBC1 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 				3CFC5C691DBD08B5005CFBC1 /* Restaurant.swift */,
 				3C1758D01DB366D600B2A0F7 /* RestaurantTableViewCell.swift */,
 				3C1758CE1DB317A100B2A0F7 /* RestaurantTableViewController.swift */,
+				3C22049A1DBFA951005E3AF6 /* RestaurantDetailTableViewCell.swift */,
 				3CFC5C671DBC650D005CFBC1 /* RestaurantDetailViewController.swift */,
 				3C1758C31DB3159700B2A0F7 /* Assets.xcassets */,
 				3C1758C51DB3159700B2A0F7 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				3CFC5C6A1DBD08B5005CFBC1 /* Restaurant.swift in Sources */,
 				3C1758CF1DB317A100B2A0F7 /* RestaurantTableViewController.swift in Sources */,
 				3C1758D11DB366D600B2A0F7 /* RestaurantTableViewCell.swift in Sources */,
+				3C22049B1DBFA951005E3AF6 /* RestaurantDetailTableViewCell.swift in Sources */,
 				3CFC5C681DBC650D005CFBC1 /* RestaurantDetailViewController.swift in Sources */,
 				3C1758BD1DB3159700B2A0F7 /* AppDelegate.swift in Sources */,
 			);
