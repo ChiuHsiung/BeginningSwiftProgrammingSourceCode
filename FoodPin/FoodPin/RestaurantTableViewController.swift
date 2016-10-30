@@ -13,9 +13,20 @@ class RestaurantTableViewController: UITableViewController {
 
     var restaurants = [Restaurant]()
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        navigationController?.hidesBarsOnSwipe = true
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Remove the title of the back button
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         
         restaurants = [
             Restaurant(name: "Cafe Deadend", type: "Coffee & Tea Shop", location: "Hong Kong", image: "cafedeadend", isVisited: false),

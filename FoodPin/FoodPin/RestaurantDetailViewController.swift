@@ -19,11 +19,23 @@ class RestaurantDetailViewController: UIViewController, UITableViewDelegate, UIT
     
     var restaurant: Restaurant!
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        navigationController?.hidesBarsOnSwipe = false
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        title = restaurant.name
         
         retaurantImageView.image = UIImage(named: restaurant.image)
         
