@@ -45,6 +45,10 @@ class RestaurantDetailViewController: UIViewController, UITableViewDelegate, UIT
         
         tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.8)
         
+        //开启Self Sizing Cells
+        tableView.estimatedRowHeight = 36.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
 //        tableView.dataSource = self;
 //        tableView.delegate = self;
     }
