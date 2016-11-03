@@ -112,4 +112,10 @@ class RestaurantDetailViewController: UIViewController, UITableViewDelegate, UIT
         
     }
 
+    @IBAction func close(segue:UIStoryboardSegue)
+    {
+        
+    }
+    
+    
 }
