@@ -68,7 +68,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        return 5
         
     }
     
@@ -88,8 +88,12 @@ class RestaurantDetailViewController: UIViewController, UITableViewDelegate, UIT
         case 2:
             cell.fieldLabel.text = "Location"
             cell.valueLabel.text = restaurant.location
-            
+        
         case 3:
+            cell.fieldLabel.text = "Phone"
+            cell.valueLabel.text = restaurant.phone
+            
+        case 4:
             cell.fieldLabel.text = "Been here"
             cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I've been here before": "No"
             
