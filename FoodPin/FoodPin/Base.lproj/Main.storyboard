@@ -21,10 +21,10 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hW9-y8-nAc" id="qMu-Iy-rH5">
-                                    <frame key="frameInset" width="342" height="80"/>
+                                    <frame key="frameInset" width="342" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n4b-jj-Lhs">
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n4b-jj-Lhs">
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-x5-5S5">
                                                     <constraints>
@@ -44,7 +44,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YX-78-Ruv">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YX-78-Ruv">
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -60,10 +60,10 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="n4b-jj-Lhs" secondAttribute="bottom" constant="2" id="1Fp-xR-rD7"/>
-                                        <constraint firstItem="n4b-jj-Lhs" firstAttribute="top" secondItem="qMu-Iy-rH5" secondAttribute="topMargin" constant="2" id="1yR-Lx-bO3"/>
-                                        <constraint firstItem="n4b-jj-Lhs" firstAttribute="leading" secondItem="qMu-Iy-rH5" secondAttribute="leadingMargin" constant="6" id="Nyp-I5-Nbg"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="n4b-jj-Lhs" secondAttribute="trailing" id="bal-My-cWh"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="n4b-jj-Lhs" secondAttribute="trailing" id="Hur-4n-Fz7"/>
+                                        <constraint firstItem="n4b-jj-Lhs" firstAttribute="leading" secondItem="qMu-Iy-rH5" secondAttribute="leadingMargin" constant="6" id="e46-he-Tgf"/>
+                                        <constraint firstItem="n4b-jj-Lhs" firstAttribute="top" secondItem="qMu-Iy-rH5" secondAttribute="topMargin" constant="2" id="jjz-gG-pM0"/>
+                                        <constraint firstItem="n4b-jj-Lhs" firstAttribute="bottom" secondItem="qMu-Iy-rH5" secondAttribute="bottomMargin" constant="2" id="t7S-LC-xvN"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -109,7 +109,7 @@
                                         <rect key="frame" x="0.0" y="392" width="375" height="36"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aU4-2v-CwL" id="tJX-1b-ZFx">
-                                            <frame key="frameInset" width="375" height="36"/>
+                                            <frame key="frameInset" width="375" height="35"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ibs-P0-4Tf">
@@ -132,8 +132,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Ibs-P0-4Tf" firstAttribute="leading" secondItem="tJX-1b-ZFx" secondAttribute="leadingMargin" id="5hf-bb-Nsp"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ibs-P0-4Tf" secondAttribute="bottom" constant="7" id="Kb7-1m-pRg"/>
                                                 <constraint firstItem="Ibs-P0-4Tf" firstAttribute="centerY" secondItem="tJX-1b-ZFx" secondAttribute="centerY" id="Ygw-ar-Zb3"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Ibs-P0-4Tf" secondAttribute="trailing" id="hBH-rH-chZ"/>
+                                                <constraint firstItem="Ibs-P0-4Tf" firstAttribute="top" secondItem="tJX-1b-ZFx" secondAttribute="top" constant="7" id="yUo-yZ-KFJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

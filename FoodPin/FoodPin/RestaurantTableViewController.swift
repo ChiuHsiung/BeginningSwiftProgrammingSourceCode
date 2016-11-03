@@ -52,7 +52,9 @@ class RestaurantTableViewController: UITableViewController {
             Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "22 Charlwood Street London SW1V 2DY Pimlico", phone: "432-344050", image: "caskpubkitchen", isVisited: false)
         ]
         
-        
+        //开启Self Sizing Cells
+        tableView.estimatedRowHeight = 80.0
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
